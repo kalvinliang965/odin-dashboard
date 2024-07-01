@@ -1,0 +1,187 @@
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+
+/*******************************************************************/
+/********************** sidebar section ****************************/
+
+.sidebar {
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 1.5rem;
+    padding-top: 20px;
+
+}
+
+.sidebar div {
+    width: 100%;
+}
+
+.sidebar > .logo-container {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: start;
+    padding: 0px 25px;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.sidebar .logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+
+svg {
+    width: 20px;
+    fill: white;
+}
+
+.sidebar-button {
+    width: 100%;
+    background: transparent;
+    color: white;
+    font-size: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 40px;
+    border: none;
+}
+
+/*******************************************************************/
+/******************Main content section ****************************/
+.main-content-area {
+    background-color: #27272a;
+}
+
+
+/********************** nav section ********************************/
+
+.header {
+    width: 100%;
+    height: 21%;
+    padding: 10px 50px;
+}
+.account-icon {
+    border-radius: 50%;
+    width: auto;
+    height: 60px;
+}
+
+.header > .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900px;
+    font-size: 1.5rem;
+}
+
+.nav-right {
+    gap: 50px;
+    justify-content: end;
+}
+
+.nav-left input {
+    border-radius: 35px;
+    width: 90%;
+    height: 40%;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+.nav-svg {
+    height: auto;
+    width: 4%;
+}
+
+/************************ Greet section ****************************/
+
+.account-icon-greet {
+    border-radius: 50%;
+    width: auto;
+    height: 120px;
+}
+
+.greeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting-left,
+.greeting-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.greeting-left div p{
+    font-size: 1.5rem;
+    margin: 5px auto;
+}
+
+.greeting-left div p:last-child{
+    font-weight: bold;
+}
+
+.greeting-right {
+    gap: 70px;
+}
+
+.greet-button {
+    width: 7rem;
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+
+
+/*******************************************************************/
+/****************** Dashboard content section **********************/
+
+.dashboard-content {
+    padding: 10px 50px;
+
+    height: 79%;
+    width: 100%;
+    margin: 0px;
+    background-color: #525252;
+}
